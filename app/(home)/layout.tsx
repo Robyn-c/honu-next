@@ -6,10 +6,12 @@ const HomeLayout = ({
   children: React.ReactNode;
 }>) => {
   return (
-    <main className="p-6">
-      <Navbar/>
+    <>
+    <Navbar/>
+    <main className="bg-purple-100">
       {children}
     </main>
+    </>
   );
 }
 // TODO: Find a better name 
