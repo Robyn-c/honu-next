@@ -1,4 +1,5 @@
 import Navbar from "@/app/(home)/components/Navbar";
+import Footer from "@/app/(home)/components/Footer/Footer";
 
 const HomeLayout = ({
   children,
@@ -11,6 +12,7 @@ const HomeLayout = ({
     <main className="bg-purple-100">
       {children}
     </main>
+    <Footer/>
     </>
   );
 }
