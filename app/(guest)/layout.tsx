@@ -1,4 +1,4 @@
-import Navbar from "@/app/(guest)/components/Navbar";
+import Navbar from "@/app/(guest)/components/Navbar/Navbar";
 import Footer from "@/app/(guest)/components/Footer/Footer";
 
 const HomeLayout = ({

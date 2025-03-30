@@ -1,4 +1,4 @@
-import MobileNavbar from "@/app/(guest)/components/MobileNavbar";
+import MobileNavbar from "@/app/(guest)/components/Navbar/MobileNavbar";
 
 const Navbar = () => {
   return (
