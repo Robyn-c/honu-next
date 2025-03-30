@@ -7,7 +7,7 @@ import {
 
 const HomeCarousel = () => {
   return ( 
-    <Carousel className="w-full px-6 m-auto">
+    <Carousel className="w-full m-auto">
       <CarouselContent>
         {Array.from({ length: 5 }).map((_, index) => (
           <CarouselItem key={index}>
