@@ -1,5 +1,5 @@
-import HomeCarousel from "@/app/(guest)/components/HomeCarousel";
-import HomeCategories from "@/app/(guest)/components/HomeCategories";
+import HomeCarousel from "@/app/(root)/components/HomeCarousel";
+import HomeCategories from "@/app/(root)/components/HomeCategories";
 
 const Homepage = () => {
   return ( 
