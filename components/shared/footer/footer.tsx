@@ -1,7 +1,7 @@
-import FooterLink from "./FooterLink";
-import FooterTitle from "./FooterTitle";
-import FooterList from "./FooterList";
-import FooterContainer from "./FooterContainer";
+import FooterLink from "./footer-link";
+import FooterTitle from "./footer-title";
+import FooterList from "./footer-list";
+import FooterContainer from "./footer-container";
 
 
 const Footer = () => {

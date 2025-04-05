@@ -1,4 +1,4 @@
-import MobileMenu from "@/app/(root)/components/Navbar/MobileMenu";
+import MobileMenu from "./mobile-menu";
 import { User, ShoppingCart } from "lucide-react";
 
 const MobileNavbar = () => {

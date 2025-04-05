@@ -1,5 +1,5 @@
-import Navbar from "@/app/(root)/components/Navbar/Navbar";
-import Footer from "@/app/(root)/components/Footer/Footer";
+import Navbar from "@/components/shared/navbar/navbar";
+import Footer from "@/components/shared/footer/footer";
 
 const HomeLayout = ({
   children,
