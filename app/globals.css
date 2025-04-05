@@ -2,6 +2,11 @@
 @import "tw-animate-css";
 /* ---break---
  */
+
+:root, html, body {
+  height: 100%;
+}
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
