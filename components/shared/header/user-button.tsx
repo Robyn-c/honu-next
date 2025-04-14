@@ -56,11 +56,9 @@ const UserButton = async () => {
           <SheetContent side="right">
             <SheetHeader>
               <SheetTitle>Are you absolutely sure?</SheetTitle>
-              <SheetDescription>
                 <form action={signOutUser} className="w-full">
                   <Button variant='outline'>Sign Out</Button>
                 </form>
-              </SheetDescription>
             </SheetHeader>
           </SheetContent>
         </Sheet>
