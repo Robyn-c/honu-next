@@ -1,5 +1,6 @@
 import MobileMenu from "./mobile-menu";
 import { User, ShoppingCart } from "lucide-react";
+import UserButton from "./user-button";
 
 const MobileNavbar = () => {
   return (
@@ -17,7 +18,7 @@ const MobileNavbar = () => {
           Functionality
       */}
       <div className="flex gap-4">
-        <User />
+        <UserButton />
         <ShoppingCart />
       </div>
       {/* TODO: SEARCH BAR */}
