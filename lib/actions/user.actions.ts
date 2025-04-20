@@ -63,6 +63,6 @@ export async function signInWithCredentials(prevState: unknown,
       if(isRedirectError(error)) {
         throw error;
       }
-      return { success: false, message: 'Credenciales inválidas' }
+      return { success: false, message: 'Usuario no registrado' }
     }
  }
