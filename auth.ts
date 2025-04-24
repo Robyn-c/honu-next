@@ -41,6 +41,10 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
     async session({ session, user, trigger, token }: any) {
       // Set user ID
       session.user.id = token.sub;
+      session.user.role = token.role;
+      session.user.name = token.name;
+
+      
 
       // If there's an udate, set the user name
       if (trigger === 'update') {
@@ -48,6 +52,20 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
       }
 
       return session;
+    },
+    async jwt({ token, user, trigger, session }: any) {
+      if(user) {
+        token.role = user.role;
+
+        if (user.name === 'NO_NAME')
+          token.name = user.name!.split('@')[0];
+          
+          await prisma.user.update({
+            where: {id: user.id },
+            data: { name: token.name },
+          })
+      }
+      return token;
     }
   },
   pages: {
